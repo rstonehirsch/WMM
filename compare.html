@@ -1,0 +1,136 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What's My Major?</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/compare.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  </head>
+  <body>
+
+
+<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#" id="navName">WMM?</a></h1>
+    </li>
+  </ul>
+
+  <section class="top-bar-section">
+    <ul class="middle">
+      <li> <h4 id="slogan"> Welcome to the Future of Major Hunting </h4> </li>
+    </ul>
+  </section>
+
+  <section class="top-bar-section">
+    <ul class="right">
+      <li class="active" id="navLi"><a href="#" id="navButton">Home</a></li>
+      <li class="passive" id="navLi">
+        <a href="#" id="navButton">Quiz</a>
+      </li>
+    </ul>
+  </section>
+</nav> 
+
+<div class="large-6 columns" id="leftBox">
+<div class="off-canvas-wrap">
+  <div class="inner-wrap">
+    <nav class="tab-bar">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+      </section>
+
+      <section class="middle tab-bar-section">
+        <a href="#" data-dropdown="drop1" class="button dropdown" id="leftDrop">Computer Science</a><br>
+          <ul id="drop1" data-dropdown-content class="f-dropdown">
+            <li><a href="#">Mechanical Engineering</a></li>
+            <li><a href="#">Chemical Engineering</a></li>
+            <li><a href="#">Electrical Engineering</a></li>
+          </ul>
+      </section>
+    </nav>
+
+    <aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Compare...</label></li>
+        <li><a href="#" onclick=academics()>Academics</a></li>
+        <li><a href="#">Major Requirements</a></li>
+        <li><a href="#" onclick=diversity()>Student Diversity</a></li>
+        <li><a href="#">Faculty</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Job Prospects</a></li>
+
+      </ul>
+    </aside>
+    <section class="main-section" id='leftMain'>
+      <div id='infoLeft'> 
+        <h1> Highest grade point average in McCormick! </h1>
+        <p> Average GPA: 3.68</p>
+        <p> Average hours of homework per week: 24hr. </p>
+        <p> ... </p> 
+      </div>
+    </section>
+
+  <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
+</div>
+
+<div class="large-6 columns" id="rightBox">
+<div class="off-canvas-wrap">
+  <div class="inner-wrap" id="rightWrap">
+    <nav class="tab-bar">
+      <section class="right-small">
+        <a class="right-off-canvas-toggle menu-icon" ><span></span></a>
+      </section>
+
+      <section class="left tab-bar-section">
+        <a href="#" data-dropdown="drop2" class="button dropdown" id="rightDrop">Choose A Major...</a><br>
+          <ul id="drop2" data-dropdown-content class="f-dropdown">
+            <li><a href="#" onclick = switchMajor("Mechanical,Engineering",'right')>Mechanical Engineering</a></li>
+            <li><a href="#">Chemical Engineering</a></li>
+            <li><a href="#">Computer Science</a></li>
+          </ul>
+      </section>
+    </nav>
+
+    <aside class="right-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Compare...</label></li>
+        <li><a href="#" onclick=academics()>Academics</a></li>
+        <li><a href="#">Major Requirements</a></li>
+        <li><a href="#" onclick=diversity()>Student Diversity</a></li>
+        <li><a href="#">Faculty</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Job Prospects</a></li>
+      </ul>
+    </aside>
+    <section class="main-section" id='rightMain'>
+      <div id='infoRight'> 
+        <h3> Choose a major to compare above! </h3>
+        <p> Click the menu icon to select different features.</p>
+        <p> You can browse topics such as Academics, Diversity, and even Job Prospects!</p>
+      </div>
+    </section>
+
+  <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
+</div>
+
+  	<script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+
+    <script src="js/compare.js"></script>
+
+  </body>
+</html>
