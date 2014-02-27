@@ -1,0 +1,25 @@
+.top-bar{
+	height: 60px;
+	background-color: #443266;
+}
+
+#navName{
+	margin-top: 8px;
+	font-size: 45px;
+}
+
+#navButton{
+	height: 60px;
+	background-color: #443266;
+	font-size: 20px;
+	padding-top: 5px;
+}
+
+
+#navLi{
+	height: 60px;
+	background-color: #443266;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-left-color: white;
+}
