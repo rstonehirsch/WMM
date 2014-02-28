@@ -16,7 +16,7 @@
 <nav class="top-bar" data-topbar>
   <ul class="title-area">
     <li class="name">
-      <h1><a href="#" id="navName">WMM?</a></h1>
+      <h1><a href="index.html" id="navName">WMM?</a></h1>
     </li>
   </ul>
 
@@ -28,9 +28,9 @@
 
   <section class="top-bar-section">
     <ul class="right">
-      <li class="active" id="navLi"><a href="#" id="navButton">Home</a></li>
+      <li class="active" id="navLi"><a href="index.html" id="navButton">Home</a></li>
       <li class="passive" id="navLi">
-        <a href="#" id="navButton">Quiz</a>
+        <a href="quiz.html" id="navButton">Quiz</a>
       </li>
     </ul>
   </section>
@@ -45,11 +45,11 @@
       </section>
 
       <section class="middle tab-bar-section">
-        <a href="#" data-dropdown="drop1" class="button dropdown" id="leftDrop">Computer Science</a><br>
+        <a href="#" data-dropdown="drop1" class="button dropdown" id="leftDrop">Choose A Major...</a><br>
           <ul id="drop1" data-dropdown-content class="f-dropdown">
-            <li><a href="#">Mechanical Engineering</a></li>
-            <li><a href="#">Chemical Engineering</a></li>
-            <li><a href="#">Electrical Engineering</a></li>
+            <li><a href="#" onclick = switchMajor("Mechanical,Engineering",'left')>Mechanical Engineering</a></li>
+            <li><a href="#" onclick = switchMajor("Chemical,Engineering",'left')>Chemical Engineering</a></li>
+            <li><a href="#" onclick = switchMajor("Electrical,Engineering",'left')>Electrical Engineering</a></li>
           </ul>
       </section>
     </nav>
@@ -58,9 +58,9 @@
       <ul class="off-canvas-list">
         <li><label>Compare...</label></li>
         <li><a href="#" onclick=academics()>Academics</a></li>
-        <li><a href="#">Major Requirements</a></li>
+        <li><a href="#" onclick=requirements()>Major Requirements</a></li>
         <li><a href="#" onclick=diversity()>Student Diversity</a></li>
-        <li><a href="#">Faculty</a></li>
+        <li><a href="#" onclick=faculty()>Faculty</a></li>
         <li><a href="#">Courses</a></li>
         <li><a href="#">Job Prospects</a></li>
 
@@ -68,10 +68,9 @@
     </aside>
     <section class="main-section" id='leftMain'>
       <div id='infoLeft'> 
-        <h1> Highest grade point average in McCormick! </h1>
-        <p> Average GPA: 3.68</p>
-        <p> Average hours of homework per week: 24hr. </p>
-        <p> ... </p> 
+        <h3> Choose a major to compare above! </h3>
+        <p> Click the menu icon to select different features.</p>
+        <p> You can browse topics such as Academics, Diversity, and even Job Prospects!</p>
       </div>
     </section>
 
@@ -93,8 +92,8 @@
         <a href="#" data-dropdown="drop2" class="button dropdown" id="rightDrop">Choose A Major...</a><br>
           <ul id="drop2" data-dropdown-content class="f-dropdown">
             <li><a href="#" onclick = switchMajor("Mechanical,Engineering",'right')>Mechanical Engineering</a></li>
-            <li><a href="#">Chemical Engineering</a></li>
-            <li><a href="#">Computer Science</a></li>
+            <li><a href="#" onclick = switchMajor("Chemical,Engineering",'right')>Chemical Engineering</a></li>
+            <li><a href="#" onclick = switchMajor("Computer,Science",'right')>Computer Science</a></li>
           </ul>
       </section>
     </nav>
@@ -103,9 +102,9 @@
       <ul class="off-canvas-list">
         <li><label>Compare...</label></li>
         <li><a href="#" onclick=academics()>Academics</a></li>
-        <li><a href="#">Major Requirements</a></li>
+        <li><a href="#" onclick=requirements()>Major Requirements</a></li>
         <li><a href="#" onclick=diversity()>Student Diversity</a></li>
-        <li><a href="#">Faculty</a></li>
+        <li><a href="#" onclick=faculty()>Faculty</a></li>
         <li><a href="#">Courses</a></li>
         <li><a href="#">Job Prospects</a></li>
       </ul>
