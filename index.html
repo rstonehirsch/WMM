@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>What's My Major?</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/nav.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
@@ -13,20 +14,27 @@
 <nav class="top-bar" data-topbar>
   <ul class="title-area">
     <li class="name">
-      <h1><a href="index.html">What's My Major?</a></h1>
+      <h1><a href="index.html" id="navName">WMM?</a></h1>
     </li>
   </ul>
 
   <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <ul class="right">
-      <li class="active" title = "Side by side comparison of your choice of majors!"><a href="compare.html">Compare</a></li>
-      <li class="active" title = "Take this quiz to be matched with a major based on your interests!"><a href="quiz.html">Quiz</a></li>
-      <li class="active" title = "Links to information about all Engineering majors!"><a href="index.html">All Majors</a></li>
+    <ul class="middle">
+      <li> <h4 id="slogan"> Welcome to the Future of Major Hunting </h4> </li>
     </ul>
   </section>
-</nav>
-<div id=page>
+
+  <section class="top-bar-section">
+    <ul class="right">
+      <li class="active" id="navLi"><a href="compare.html" id="navButton">Compare</a></li>
+      <li class="passive" id="navLi">
+        <a href="quiz.html" id="navButton">Quiz</a>
+      </li>
+    </ul>
+  </section>
+</nav> 
+
+<!-- <div id=page>
 <div id = header>
 <h1>McCormick Engineering</h1>
 <div id = subheader>
@@ -34,7 +42,7 @@
 <h6>->Click on a major to learn more!</h6>
 </div>
 </div>
-<div class="row">
+<div class="row"> -->
     <div class="large-4 columns">
       <div class="panel">
 	<h5>Mechanical Engineering</h5>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>What's My Major?</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/nav.css" />
     <script src="js/vendor/modernizr.js"></script>
 	<script src="http://code.jquery.com/jquery-1.5.min.js"></script>
 	<script>
@@ -28,21 +29,27 @@
 <nav class="top-bar" data-topbar>
   <ul class="title-area">
     <li class="name">
-      <h1><a href="index.html">WMM</a></h1>
+      <h1><a href="index.html" id="navName">WMM?</a></h1>
     </li>
   </ul>
 
   <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <ul class="right">
-      <li class="active"><a href="compare.html">Compare</a></li>
-      <li class="has-dropdown">
-        <a href="quiz.html">Quiz</a>
-      </li>
-      <li class="active"><a href="index.html">All Majors</a></li>
+    <ul class="middle">
+      <li> <h4 id="slogan"> Biomedical Engineering </h4> </li>
     </ul>
   </section>
-</nav>
+
+  <section class="top-bar-section">
+    <ul class="right">
+    	<li class="active" id="navLi"><a href="index.html" id="navButton">Home</a></li>
+      <li class="active" id="navLi"><a href="compare.html" id="navButton">Compare</a></li>
+
+      <li class="passive" id="navLi">
+        <a href="quiz.html" id="navButton">Quiz</a>
+      </li>
+    </ul>
+  </section>
+</nav> 
 
   <script src="js/vendor/jquery.js"></script>
   <script src="js/foundation.min.js"></script>
@@ -50,14 +57,12 @@
    $(document).foundation();
   </script>
   
-	<div id = header>
+	<!-- <div id = 'header'>
 	<h1>Biomedical Engineering</h1>
 	<h3>Word on the Street</h3>
-	</div>
+	</div> -->
 		
-	<!-- <h1 style = "text-align:center">Biomedical Engineering</h1>
-	<hr>
-	<h3 style="text-align:center">Word on the Street</h3> -->
+	<h3 style="margin-left: 15px;">Featured Students</h3>
 	<div class="images">
 	<ul class="small-block-grid-4">
     <li><a href="personal_story.html">
@@ -115,10 +120,10 @@
 
 <style>
   body{
-    background:#121211;
+    background:white;
   }
   h1{
-    color:White;
+    color:white;
   }
   h2{
     color:white;
@@ -126,8 +131,8 @@
     background:#31043F;
   }
   h3{
-    color:white;
-    background:black;
+    color:#443266;
+    background:white;
   }
   h6{
     color:white;
