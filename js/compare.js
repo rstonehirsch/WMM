@@ -20,12 +20,12 @@ function switchMajor(major,side){
 		$('#rightModalDrop').text(major);
 	}
 
-	diversity();
 
 	if(leftMajor != null && rightMajor != null && joyride==0){
 		$('#myModal').foundation('reveal', 'close');
 		$(document).foundation('joyride', 'start');
 		joyride++;
+		diversity();
 	}
 
 	$('#slogan').click();
