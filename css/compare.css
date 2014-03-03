@@ -1,15 +1,33 @@
 
 #leftBox{
-	margin-top: 2px;
-	margin-left: -30px;
-	margin-right: -20px;
-	
+	margin-top: 0;
+	padding-right: 1px;
+}
+
+#infoLeft{
+	padding-left:10px;
+	padding-right:10px; 
+}
+
+#leftMain{
+	height: 100%;
+}
+
+#infoRight{
+	padding-left:10px;
+	padding-right:10px;  
+
 }
 
 
+
 #rightBox{
-	margin-top: 2px;
-	left:30px;
+	margin-top: 0;
+	padding-left: 1px;
+}
+#bigBox{
+	position: absolute;
+	padding-bottom: 0;
 }
 
 nav.tab-bar{
@@ -23,16 +41,109 @@ nav.tab-bar{
 	background-color: #C3C3E5;
 	font-size: 30px;
 	margin-top: -10px;
-	margin-left: 50px;
 	color: #443266;
+	padding-left: 0;
+
 }
 
 #rightDrop{
-	margin-left: -15px;
 	height: 45px;
 	background-color: #C3C3E5;
 	font-size: 30px;
 	margin-top: -10px;
-	margin-left: 60px;
 	color:#443266;
+/*	margin-left: -32px;*/
+	padding-left: 0;
+
+}
+
+#leftModalDrop, #rightModalDrop{
+	background-color: #C3C3E5;
+	font-size: 30px;
+	color:#443266;
+/*	margin-left: -32px;*/
+}
+
+.column, .columns{
+	padding-left: 0;
+	padding-right: 0;
+}
+a.menu-icon{
+	color:#443266;
+}
+section.left-small{
+	border-color: #443266;
+	border-width: 2px;
+	box-shadow: none;
+}
+section.right-small{
+	border-color: #443266;
+	border-width: 2px;
+	box-shadow: none;
+}
+ul.off-canvas-list{
+	background-color:#443266;
+}
+ul.off-canvas-list li label{
+	background-color: #C3C3E5;
+	color:#443266;
+}
+
+ul.off-canvas-list li a{
+	color:white;
+}
+
+.dropdown.button:before, button.dropdown:before{
+	margin-top: 7px;
+	border-color: #443266 transparent transparent transparent;
+}
+
+a.menu-icon span{
+-webkit-box-shadow: 1px 10px 1px 1px #443266, 1px 16px 1px 1px #443266, 1px 22px 1px 1px #443266;
+box-shadow: 0 10px 0 1px #443266, 0 16px 0 1px #443266, 0 22px 0 1px #443266;
+}
+
+.left-off-canvas-menu{
+	background: #443266;
+}
+
+.right-off-canvas-menu{
+	background: #443266;
+}
+
+.f-dropdown.open{
+	margin-top: 15px;
+}
+
+#bigBox:after {
+    content:"";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 49.99%;
+    border-left: 2px solid #443266;
+}
+
+.joyride-content-wrapper{
+	background-color: #C3C3E5;
+	padding: 0px;
+	color: #443266;
+}
+
+.joyride-tip-guide{
+	background-color: #C3C3E5;
+}
+
+.joyride-content-wrapper p{
+	margin-top: 5px;
+	font-size:20px;
+	margin-left: 10px;
+}
+.joyride-content-wrapper .button{
+	position: absolute;
+	right:12px;
+	bottom: 0;
+	background-color: #443266;
+	margin-top:-50px;
 }

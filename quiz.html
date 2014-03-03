@@ -36,30 +36,37 @@
   </section>
 </nav> 
 
-<div class="one-large" style="margin-left: 30px; margin-top: 20px;">
-  <h1>Question 1 of 10:</h1>
+<div class="one-large" style="margin-left: 10px; margin-top: 20px;">
+  <h1 id='count'>Question 1 of 10:</h1>
 </div>
 
 <div class="one-large" id="question">
-  <div id='question text'>
-    <h1>Do you enjoy mathematics such as calculus?</h1>
+  <div id='questionDiv'>
+    <h1 id='questionText'>Do you enjoy mathematics such as calculus?</h1>
   </div>
 </div>
 
 <div class="row" id="row1">
-  <a href="#" class="button"> YES </a>
-  <a href="#" class="button"> NO </a>
+  <a href="#" class="button" style="margin-right:10px;" onclick=answer('yes')> YES </a>
+  <a href="#" class="button" style="margin-left:10px;" onclick=answer('no')> NO </a>
+</div>
+
+<div id="myModal" class="reveal-modal medium" data-reveal>
+  <h2>Thanks for taking our quiz!</h2>
+  <h3>Based off your answers we think you would enjoy Biomedical Engineering</h3>
+  <a href="learn.html" id='compareButton' class="button">Check Out Biomedcal Engineering</a>
+  </ul>
 </div>
 
 
 
-<script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
     </script>
 
-    <script src="js/compare.js"></script>
+    <script src="js/quiz.js"></script>
 
   </body>
 </html>

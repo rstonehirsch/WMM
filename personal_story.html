@@ -26,21 +26,42 @@
 
   <section class="top-bar-section">
     <ul class="right">
+      <li class="active" id="navLi"><a href="learn.html" id="navButton">Biomedical</a></li>
       <li class="active" id="navLi"><a href="index.html" id="navButton">Home</a></li>
+      <li class="active" id="navLi"><a href="compare.html" id="navButton">Compare</a></li>
       <li class="passive" id="navLi">
         <a href="quiz.html" id="navButton">Quiz</a>
       </li>
     </ul>
   </section>
 </nav> 
-	<div id = header>
+<div class='large-3 small-3 columns'>
+	<div id = 'header'>
 	<img src="images/college-girl.jpg"
 			alt="college-girl"
 			height = "250"
 			width = "250"/>
 	</div>
-	<h3>Hannah West</h3>
-	<h6>My Story</h6>
+  <h3>Hannah West</h3>
+  <h5>Hannah West Graduated 2008 with a major in Biomedical Engineering and a minor in Biology. She now works at Dana Farber in Boston, MA engineering the next generation of prosthetics. </h5>
+  <a href="learn.html" id='compareButton' class="button">Back to Biomedcal Engineering</a>
+  <h4 id='more'>More Students:</h4>
+  <h3><a href='personal_story.html'>Jonathan Still</a></h3>
+  <h3><a href='personal_story.html'>Beth Cornish</a></h3>
+  <h3><a href='personal_story.html'>Benjamin Krill</a></h3>
+</div>
+
+<div class='large-9 small-9 columns'>
+<h3 id='story'>My Experience With Biomedical Engineering</h3>
+
+<p id="lorem"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu libero non magna blandit dapibus quis rhoncus urna. Integer fringilla dolor a quam consequat pharetra. Duis condimentum scelerisque diam at ultrices. Ut a ante vitae ipsum dictum ultricies eu id enim. Pellentesque mollis at enim quis pulvinar. Aenean scelerisque at risus ac mattis. Suspendisse ultricies elementum aliquam. Nunc suscipit iaculis turpis, at pretium sem fermentum nec.
+
+Vestibulum scelerisque vestibulum nisi in faucibus. Quisque scelerisque vehicula ipsum, in iaculis leo elementum pulvinar. Integer sollicitudin arcu ipsum, at congue lectus commodo a. Nullam molestie est quis purus ultricies aliquet. Phasellus metus dui, rhoncus quis placerat laoreet, pulvinar ac augue. Maecenas lacinia pretium tortor, sed lobortis sapien viverra a. Donec ut faucibus magna. In posuere risus arcu, eget mattis arcu consectetur sit amet. Mauris id nunc sit amet dolor tempus porta. Morbi quis odio at nisl varius tincidunt. Sed pharetra bibendum diam, nec pulvinar justo aliquet et. Sed egestas ante vitae aliquam dignissim. Pellentesque sollicitudin lectus eget sem feugiat tincidunt. Duis vulputate facilisis augue, ac tempor nulla porttitor a. Maecenas quis orci faucibus, adipiscing justo adipiscing, rhoncus leo.</p>
+
+<p id="lorem"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu libero non magna blandit dapibus quis rhoncus urna. Integer fringilla dolor a quam consequat pharetra. Duis condimentum scelerisque diam at ultrices. Ut a ante vitae ipsum dictum ultricies eu id enim. Pellentesque mollis at enim quis pulvinar. Aenean scelerisque at risus ac mattis. Suspendisse ultricies elementum aliquam. Nunc suscipit iaculis turpis, at pretium sem fermentum nec.
+
+Vestibulum scelerisque vestibulum nisi in faucibus. Quisque scelerisque vehicula ipsum, in iaculis leo elementum pulvinar. Integer sollicitudin arcu ipsum, at congue lectus commodo a. Nullam molestie est quis purus ultricies aliquet. Phasellus metus dui, rhoncus quis placerat laoreet, pulvinar ac augue. Maecenas lacinia pretium tortor, sed lobortis sapien viverra a. Donec ut faucibus magna. In posuere risus arcu, eget mattis arcu consectetur sit amet. Mauris id nunc sit amet dolor tempus porta. Morbi quis odio at nisl varius tincidunt. Sed pharetra bibendum diam, nec pulvinar justo aliquet et. Sed egestas ante vitae aliquam dignissim. Pellentesque sollicitudin lectus eget sem feugiat tincidunt. Duis vulputate facilisis augue, ac tempor nulla porttitor a. Maecenas quis orci faucibus, adipiscing justo adipiscing, rhoncus leo.</p>
+</div>
 
 </body>
 
@@ -61,12 +82,49 @@
     color:#443266;
     background:white
   }
+  h5{
+    color:#443266;
+    background:white
+  }
+  #more{
+    color:#443266;
+    background:white;
+    margin-top: -10px;
+  }
   h6{
     color:black;
     font-style:italic;
     background:white;
   }
+  h3 a{
+    color:#C3C3E5;
+  }
+
+  h3 a:hover{
+    color:#443266;
+  }
   #header{
+    margin-top: 15px;
     background:white;
   }
+  #story{
+    margin-top: 10px;
+    padding-left:-10px;
+  }
+
+  #lorem{
+    padding-right: 280px;
+    padding-left: -10px;
+  }
+
+  #compareButton{
+  -moz-box-shadow:0 0 5px 2px rgba(0, 0, 0, 0.29);
+  -webkit-box-shadow:0 0 5px 2px rgba(0, 0, 0, 0.29);
+  box-shadow:0 0 5px 2px rgba(0, 0, 0, 0.29);
+  font-size: 20px;
+  padding: 10px;
+  background: #443266;
+
+}
+
   </style>
