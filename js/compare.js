@@ -1,6 +1,7 @@
 
 var leftMajor = null;
 var rightMajor = null;
+var joyride = 0;
 
 function switchMajor(major,side){
 	major = major.replace(',',' ');
@@ -21,9 +22,10 @@ function switchMajor(major,side){
 
 	diversity();
 
-	if(leftMajor != null && rightMajor != null){
+	if(leftMajor != null && rightMajor != null && joyride==0){
 		$('#myModal').foundation('reveal', 'close');
 		$(document).foundation('joyride', 'start');
+		joyride++;
 	}
 
 	$('#slogan').click();

@@ -8,30 +8,6 @@
     <link rel="stylesheet" href="css/nav.css" />
     <script src="js/vendor/modernizr.js"></script>
 	<script src="http://code.jquery.com/jquery-1.5.min.js"></script>
-	<script>
-	$(document).ready(function(){
-		$("#panel1").click(function(){
-			$("#courses").toggle();
-		});
-		
-		$("#panel2").click(function(){
-			$("#research").toggle();
-		});
-		
-		$("#panel3").click(function(){
-			$("#fac").toggle();
-		});
-		$("#panel4").click(function(){
-			$("#diverse").toggle();
-		});
-		$("#panel5").click(function(){
-			$("#jobs").toggle();
-		});
-		$("#panel6").click(function(){
-			$("#faqs").toggle();
-		});
-	});
-	</script>
   </head>
   
 <body>
@@ -69,24 +45,39 @@
 	<h3 style="margin-left: 15px;">Featured Students</h3>
 	<div class="images">
 	<ul class="small-block-grid-4">
-    <li><a href="personal_story.html">
+    <li><div class="panel">
+    	<a href="personal_story.html">
 		<img src="images/college-girl.jpg"
 			alt="college-girl" />
-			<p class="overhead">Hannah West' 2016</p>
-		</a>
+			<p class="overhead">Hannah West' 2016</p></a>
+	<h6>Hannah West Graduated 2008 with a major in Biomedical Engineering and a minor in Biology. She now works at Dana Farber in Boston, MA engineering the next generation of prosthetics.</h6>
+		
+	</div>
 	</li>
-    <li><a href="personal_story.html">
+    <li><div class="panel">
+    	<a href="personal_story.html">
 		<img src="images/smile-final.jpg"
 			alt="college-girl"/>
-			<p class="overhead">Jonathan Still' 2015</p></a></li>
-    <li><a href="personal_story.html">
+			<p class="overhead">Jonathan Still' 2015</p></a>
+		<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu libero non magna blandit dapibus quis rhoncus urna. Nunc suscipit iaculis turpis, at pretium sem fermentum nec.</h6>
+		</div>
+		</li>
+    <li><div class="panel">
+    	<a href="personal_story.html">
 		<img src="images/student-books.jpg"
 			alt="student-with-bookx"/>
-			<p class="overhead">Beth Cornish' 2014</p></a></li>
-    <li><a href="personal_story.html">
+			<p class="overhead">Beth Cornish' 2014</p></a>
+		<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu libero non magna blandit dapibus quis rhoncus urna. Nunc suscipit iaculis turpis, at pretium sem fermentum nec.</h6>
+		</div>
+	</li>
+    <li><div class="panel">
+    	<a href="personal_story.html">
 		<img src="images/college-boy.jpg"
 			alt="college-boy"/>
-			<p class="overhead">Benjamin Krill' 2015</p></a></li>
+			<p class="overhead">Benjamin Krill' 2015</p></a>
+		<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu libero non magna blandit dapibus quis rhoncus urna. Nunc suscipit iaculis turpis, at pretium sem fermentum nec.</h6>
+		</div>
+	</li>
 	</ul>
 	</div>
 <div class='large-12 small-12 columns'>
@@ -267,12 +258,6 @@ Vestibulum scelerisque vestibulum nisi in faucibus. Quisque scelerisque vehicula
     color:#443266;
     background:white;
   }
-  h6{
-    color:white;
-    text-indent:50px;
-    font-style:italic;
-    background:black;
-  }
 
   #wrapperOne {
     box-shadow:0 0 2px 2px rgba(0, 0, 0, 0.29);
@@ -371,31 +356,16 @@ Vestibulum scelerisque vestibulum nisi in faucibus. Quisque scelerisque vehicula
 	left:25px;
 }
 
-.accordion dd > a{
-	background: #C3C3E5;
-	border-top-style: solid;
-	border-top-width: 2px;
-	border-top-color: white;
-	font-size: 30px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	color:#443266;
-}
 
-.accordion dd.active a{
-	background: #C3C3E5
-}
-
-.accordion{
-	margin-top: -20px;
-}
-
-.accordion dd > a:hover, a:focus{
-	background:#443266;
-	color: white;
-}
-
-[data-magellan-expedition]{
-}
+.panel{
+    background: #f2f0f0;
+    border-width: 1px;
+    padding: 5px;
+  }
+ h6{
+    color:#443266;
+    font-style:italic;
+    margin-top:-15px;
+  }
 
 </style>
